@@ -93,7 +93,7 @@ function App() {
 
             <div className="photo-container">
               <img
-                src="/wife-photo.jpg"
+                src={`${process.env.PUBLIC_URL}/wife-photo.jpg`}
                 alt="My beloved wife"
                 className="wife-photo"
                 onError={(e) => {
