@@ -105,6 +105,7 @@ function App() {
   const [selectedColor, setSelectedColor] = useState('#FF1493');
   const [showAnimation, setShowAnimation] = useState(false);
   const [showPhoto, setShowPhoto] = useState(false);
+  const [messageIndex, setMessageIndex] = useState(0);
 
   const colors = [
     '#FF1493', // Deep Pink
@@ -115,10 +116,20 @@ function App() {
     '#FF1744', // Bright Red
   ];
 
+  const messages = [
+    '🌹 For my beloved wife ❤️',
+    '💕 You make my heart bloom 🌸',
+    '✨ You are my favorite color ✨',
+    '💑 Forever and always 💑',
+    '🎉 My love, my life, my everything 🎉',
+    '💐 You are absolutely amazing 💐'
+  ];
+
   const handleColorSelect = (color) => {
     setSelectedColor(color);
     setShowAnimation(false);
     setShowPhoto(false);
+    setMessageIndex(Math.floor(Math.random() * messages.length));
     // Trigger animation with a small delay to reset state
     setTimeout(() => {
       setShowAnimation(true);
@@ -129,6 +140,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <h1 className="title">Choose Your Color</h1>
         <div className="color-picker-wrapper">
           <p className="subtitle">Pick a color and watch the magic ✨</p>
           <div className="color-picker">
@@ -176,7 +188,7 @@ function App() {
               />
             </div>
             <div className="message">
-              <p>For my beloved wife ❤️</p>
+              <p>{messages[messageIndex]}</p>
             </div>
           </>
         )}
