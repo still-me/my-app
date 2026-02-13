@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/still-me/my-app/static/css/main.5b31405c.css",
+    "main.js": "/still-me/my-app/static/js/main.9e23e743.js",
+    "static/js/453.fd2f0c4a.chunk.js": "/still-me/my-app/static/js/453.fd2f0c4a.chunk.js",
+    "index.html": "/still-me/my-app/index.html",
+    "main.5b31405c.css.map": "/still-me/my-app/static/css/main.5b31405c.css.map",
+    "main.9e23e743.js.map": "/still-me/my-app/static/js/main.9e23e743.js.map",
+    "453.fd2f0c4a.chunk.js.map": "/still-me/my-app/static/js/453.fd2f0c4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b31405c.css",
+    "static/js/main.9e23e743.js"
+  ]
+}
